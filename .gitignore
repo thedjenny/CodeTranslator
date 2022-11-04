@@ -1,0 +1,3 @@
+# Project exclude paths
+/languages/mps.codetranslator/classes_gen/
+/languages/mps.codetranslator/generator/classes_gen/
