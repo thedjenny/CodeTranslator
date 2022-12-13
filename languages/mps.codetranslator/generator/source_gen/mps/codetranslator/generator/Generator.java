@@ -8,7 +8,7 @@ import jetbrains.mps.smodel.language.LanguageRuntime;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.module.SModuleReference;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
-import mps.codetranslator.generator.Librairy.QueriesGenerated;
+import mps.codetranslator.generator.templates.QueriesGenerated;
 import java.util.Collection;
 import org.jetbrains.mps.openapi.language.SLanguage;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -28,8 +28,8 @@ public class Generator extends TemplateModuleInterpreted2 {
 
   @Override
   protected void fillTemplateModels(TemplateModuleInterpreted2.TemplateModels models) {
-    models.templates("r:40e4db1b-68dc-420a-8529-146524d14fd4", QueriesGenerated.class);
-    models.templates("r:ccca4c5e-78ce-4fad-9af7-e115d114bbc7", mps.codetranslator.generator.templates.QueriesGenerated.class);
+    models.templates("r:ccca4c5e-78ce-4fad-9af7-e115d114bbc7", QueriesGenerated.class);
+    models.templates("r:9d65861f-c7f2-49d4-afcd-561fdd4c50c3", mps.codetranslator.generator.templates.Library.QueriesGenerated.class);
   }
 
 

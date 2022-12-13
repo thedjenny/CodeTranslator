@@ -24,7 +24,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.LanguageRegistry" />
     <classNode dependClassName="jetbrains.mps.smodel.language.LanguageRuntime" />
-    <classNode dependClassName="mps.codetranslator.generator.Librairy.QueriesGenerated" />
+    <classNode dependClassName="mps.codetranslator.generator.templates.Library.QueriesGenerated" />
     <classNode dependClassName="mps.codetranslator.generator.templates.QueriesGenerated" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SLanguage" />
