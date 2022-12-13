@@ -11,13 +11,24 @@
   <registry>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
+        <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
       </concept>
+      <concept id="1168559333462" name="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" flags="ln" index="j$656" />
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
         <reference id="1168619429071" name="applicableConcept" index="n9lRv" />
       </concept>
+      <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ng" index="v9R3L">
+        <reference id="1722980698497626483" name="template" index="v9R2y" />
+      </concept>
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
+      </concept>
+      <concept id="1092059087312" name="jetbrains.mps.lang.generator.structure.TemplateDeclaration" flags="ig" index="13MO4I">
+        <child id="1092060348987" name="contentNode" index="13RCb5" />
+      </concept>
+      <concept id="1167327847730" name="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" flags="lg" index="3aamgX">
+        <child id="1169672767469" name="ruleConsequence" index="1lVwrX" />
       </concept>
       <concept id="1167514355419" name="jetbrains.mps.lang.generator.structure.Root_MappingRule" flags="lg" index="3lhOvk">
         <reference id="1167514355421" name="template" index="3lhOvi" />
@@ -58,6 +69,12 @@
       <ref role="30HIoZ" to="o1f4:6lVE0XCkzh6" resolve="InputFile" />
       <ref role="3lhOvi" node="6lVE0XCkIbD" resolve="python" />
     </node>
+    <node concept="3aamgX" id="4Ea_gce5EB2" role="3acgRq">
+      <ref role="30HIoZ" to="o1f4:6lVE0XCkzh6" resolve="InputFile" />
+      <node concept="j$656" id="4Ea_gce5EB6" role="1lVwrX">
+        <ref role="v9R2y" node="4Ea_gce5EB8" resolve="reduce_InputFile" />
+      </node>
+    </node>
   </node>
   <node concept="356sEV" id="6lVE0XCkIbv">
     <property role="TrG5h" value="arduino" />
@@ -88,6 +105,10 @@
     <node concept="n94m4" id="6lVE0XCkIbF" role="lGtFl">
       <ref role="n9lRv" to="o1f4:6lVE0XCkzh6" resolve="InputFile" />
     </node>
+  </node>
+  <node concept="13MO4I" id="4Ea_gce5EB8">
+    <property role="TrG5h" value="reduce_InputFile" />
+    <node concept="2VYdi" id="4Ea_gce5EBp" role="13RCb5" />
   </node>
 </model>
 

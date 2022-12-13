@@ -7,6 +7,9 @@
   <imports />
   <registry>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
+      <concept id="2133624044437898907" name="jetbrains.mps.core.xml.structure.XmlDoctypeDeclaration" flags="ng" index="29q25o">
+        <property id="2133624044437898910" name="doctypeName" index="29q25t" />
+      </concept>
       <concept id="6666499814681515200" name="jetbrains.mps.core.xml.structure.XmlFile" flags="ng" index="2pMbU2">
         <child id="6666499814681515201" name="document" index="2pMbU3" />
       </concept>
@@ -2487,6 +2490,32 @@
       <node concept="2pNm8N" id="1t6UisLKSfB" role="2pNm8Q">
         <node concept="3W$oVP" id="284r77K$Ceg" role="BGLLu">
           <property role="1D$jbd" value="1.0" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="dapL9" id="Z906PwkxHO">
+    <property role="TrG5h" value="test" />
+    <node concept="3rIKKV" id="Z906PwkxHP" role="2pMbU3">
+      <node concept="2pNNFK" id="Z906PwkxHV" role="2pNm8H">
+        <property role="2pNNFO" value="car" />
+        <node concept="2pNNFK" id="Z906PwkxHX" role="3o6s8t">
+          <property role="2pNNFO" value="color" />
+          <node concept="3o6iSG" id="Z906PwkxHZ" role="3o6s8t">
+            <property role="3o6i5n" value="Blue" />
+          </node>
+        </node>
+        <node concept="2pNNFK" id="Z906PwkxI5" role="3o6s8t">
+          <property role="2pNNFO" value="type" />
+          <node concept="3o6iSG" id="Z906PwkxIa" role="3o6s8t">
+            <property role="3o6i5n" value="Hyundai Accent" />
+          </node>
+        </node>
+        <node concept="3o6iSG" id="Z906PwkxI1" role="3o6s8t" />
+      </node>
+      <node concept="2pNm8N" id="Z906PwkxHR" role="2pNm8Q">
+        <node concept="29q25o" id="Z906PwkxHT" role="BGLLu">
+          <property role="29q25t" value="XML" />
         </node>
       </node>
     </node>
