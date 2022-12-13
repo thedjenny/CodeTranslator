@@ -159,7 +159,7 @@
             <node concept="2pNUuL" id="284r77K$BOt" role="2pNNFR">
               <property role="2pNUuO" value="Name" />
               <node concept="2pMdtt" id="284r77K$BOu" role="2pMdts">
-                <property role="2pMdty" value="Category" />
+                <property role="2pMdty" value="Category " />
               </node>
             </node>
             <node concept="3o6iSG" id="284r77K$BOv" role="3o6s8t">
